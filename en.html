@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta charset="UTF-8" />
@@ -17,18 +17,24 @@
       background-color: #C8102E;
       color: white;
       text-align: center;
-      padding: 3rem 1rem 1rem;
+      padding: 2rem 1rem;
     }
-    header img {
-      max-width: 200px;
-      margin-bottom: 1rem;
+    .logo-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .logo-title img {
+      height: 64px;
+      width: auto;
     }
     nav {
-      text-align: center;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
     nav a {
-      margin: 0 1rem;
+      margin: 0 0.75rem;
       text-decoration: none;
       color: white;
       font-weight: bold;
@@ -71,45 +77,39 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Lantern Star Logo" />
-    <h1>Lantern Star</h1>
-    <p>Design to Reality</p>
-    <nav>
-      <a href="index.html">中文</a> | <a href="en.html">English</a>
-    </nav>
+    <div class="logo-title">
+      <img src="logo.png" alt="Lantern Star Logo" />
+      <div><h1>Lantern Star</h1><p>Design to Reality</p></div>
+    </div>
+    <nav><a href="index.html">中文</a></nav>
   </header>
 
   <section>
-    <h2>關於我們</h2>
-    <p>Lantern Star 是一個結合經典工藝與現代技術的設計團隊，專注於產品設計開發、mock-up 打樣製作、CAD/CAM 工程整合與教育訓練。</p>
+    <h2>About Us</h2>
+    <p>Lantern Star is a design-driven technical team combining classic craftsmanship and modern engineering. We focus on product development, mock-up prototyping, CAD/CAM integration, and design education.</p>
   </section>
 
   <section>
-    <h2>服務項目</h2>
-    <ul>
-      <li>客製化產品設計</li>
-      <li>mock-up 樣品製作</li>
-      <li>CAD/CAM 工程</li>
-      <li>產品設計教育訓練</li>
-    </ul>
+    <h2>Services</h2>
+    <ul><li>Custom Product Design</li><li>Mock-up Prototyping</li><li>CAD/CAM Engineering</li><li>Design Education & Training</li></ul>
   </section>
 
   <section>
-    <h2>聯絡我們</h2>
+    <h2>Contact Us</h2>
     <div class="contact-info">
       <div class="contact-text">
-        <p>📧 Email：lanternstar.team@gmail.com</p>
-        <p>📍 地址：台南市 / 台灣</p>
+        <p>Email：lanternstar.team@gmail.com</p>
+        <p>📍 Address: Tainan, Taiwan</p>
       </div>
       <div class="qr-code">
         <img src="lantern_star_qr.png" alt="Lantern Star QR Code" />
-        <p style="font-size: 0.8rem; margin-top: 0.5rem;">掃描聯絡我們</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem;">Scan to contact</p>
       </div>
     </div>
   </section>
 
   <footer>
-    Lantern Star © 2025 │ 提燈星設計開發 │ Design to Reality
+    Lantern Star © 2025 │ Design to Reality
   </footer>
 </body>
 </html>
