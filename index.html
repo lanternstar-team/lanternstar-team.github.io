@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh">
 <head>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lantern Star │ Design to Reality</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
       margin: 0;
@@ -16,19 +16,34 @@
     header {
       background-color: #C8102E;
       color: white;
-      text-align: center;
-      padding: 3rem 1rem 1rem;
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
     }
-    header img {
-      max-width: 200px;
-      margin-bottom: 1rem;
+    .logo {
+      flex: 0 0 100px;
+    }
+    .logo img {
+      width: 80px;
+      height: auto;
+    }
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+    .header-text h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .header-text p {
+      margin: 0.25rem 0;
     }
     nav {
-      text-align: center;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
     nav a {
-      margin: 0 1rem;
+      margin: 0 0.75rem;
       text-decoration: none;
       color: white;
       font-weight: bold;
@@ -71,12 +86,14 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Lantern Star Logo" />
-    <h1>Lantern Star</h1>
-    <p>Design to Reality</p>
-    <nav>
-      <a href="index.html">中文</a> | <a href="en.html">English</a>
-    </nav>
+    <div class="logo">
+      <img src="logo.png" alt="Lantern Star Logo" />
+    </div>
+    <div class="header-text">
+      <h1>Lantern Star</h1>
+      <p>Design to Reality</p>
+      <nav><a href="en.html">English</a></nav>
+    </div>
   </header>
 
   <section>
@@ -86,12 +103,7 @@
 
   <section>
     <h2>服務項目</h2>
-    <ul>
-      <li>客製化產品設計</li>
-      <li>mock-up 樣品製作</li>
-      <li>CAD/CAM 工程</li>
-      <li>產品設計教育訓練</li>
-    </ul>
+    <ul><li>客製化產品設計</li><li>mock-up 樣品製作</li><li>CAD/CAM 工程</li><li>產品設計教育訓練</li></ul>
   </section>
 
   <section>
@@ -109,7 +121,7 @@
   </section>
 
   <footer>
-    Lantern Star © 2025 │ 提燈星設計開發 │ Design to Reality
+    Lantern Star © 2025 │ Design to Reality
   </footer>
 </body>
 </html>

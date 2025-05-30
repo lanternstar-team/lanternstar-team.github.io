@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lantern Star │ Design to Reality</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
       margin: 0;
@@ -16,19 +16,28 @@
     header {
       background-color: #C8102E;
       color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    .logo-title {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 1rem;
+      padding: 1rem 2rem;
       flex-wrap: wrap;
     }
-    .logo-title img {
-      height: 64px;
-      width: auto;
+    .logo {
+      flex: 0 0 100px;
+    }
+    .logo img {
+      width: 80px;
+      height: auto;
+    }
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+    .header-text h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .header-text p {
+      margin: 0.25rem 0;
     }
     nav {
       margin-top: 0.5rem;
@@ -77,11 +86,14 @@
 </head>
 <body>
   <header>
-    <div class="logo-title">
+    <div class="logo">
       <img src="logo.png" alt="Lantern Star Logo" />
-      <div><h1>Lantern Star</h1><p>Design to Reality</p></div>
     </div>
-    <nav><a href="index.html">中文</a></nav>
+    <div class="header-text">
+      <h1>Lantern Star</h1>
+      <p>Design to Reality</p>
+      <nav><a href="index.html">中文</a></nav>
+    </div>
   </header>
 
   <section>
